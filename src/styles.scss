@@ -1,1 +1,47 @@
-/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+// Variáveis p/ cores
+//app Colors
+$bg-red: #F23838;
+$bg-white: #F1F1F1;
+$bg-black: #242424;
+$bg-black-2: #303030;
+
+//pokemon colors
+$red: #F24C36;
+$blue: #71BCF9;
+$green: #5FA189;
+$yellow: #FFE655;
+$purple: #9849A4;
+$pink: #F832A9;
+$brown: #AB6E2A;
+$black: #5E5E5E;
+$gray: #B3B1B1;
+$white: #E5E5E5;
+
+//pokemon light colors
+$red: #FCA99E;
+$blue: #D3EBFF;
+$green: #B4EDE3;
+$yellow: #FFFCD6;
+$purple: #B798BB;
+$pink: #FDBCE3;
+$brown: #CABBAB;
+$black: #B3B1B1;
+$gray: #E5E5E5;
+$white: #FEFEFE;
+
+//Variáveis p/ sombras
+$dropShadowLevel2: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 1px 2px rgba(0, 0, 0, 0.3);
+$dropShadowLevel3: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 8px 3px rgba(0, 0, 0, 0.15);
+
+//Variáveis p/ fontes
+$normal-14: 400 0.875rem 'Roboto';
+$normal-16: 400 1rem 'Roboto';
+$normal-20: 400 1.25rem 'Roboto';
+$normal-24: 400 1.5rem 'Roboto';
+
+$bold-14: 700 0.875rem 'Roboto';
+$bold-16: 700 1rem 'Roboto';
+$bold-20: 700 1.25rem 'Roboto';
+$bold-24: 700 1.5rem 'Roboto';
