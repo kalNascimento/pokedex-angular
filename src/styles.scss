@@ -45,3 +45,9 @@ $bold-14: 700 0.875rem 'Roboto';
 $bold-16: 700 1rem 'Roboto';
 $bold-20: 700 1.25rem 'Roboto';
 $bold-24: 700 1.5rem 'Roboto';
+
+* {
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
