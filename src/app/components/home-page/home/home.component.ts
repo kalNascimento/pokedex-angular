@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { AllPokemons } from 'src/app/models/all-pokemons/all-pokemons.model';
+import { PokemonService } from 'src/app/services/pokemon-service/pokemon.service';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +9,13 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  constructor(private pokemonService: PokemonService) { }
 
   ngOnInit(): void {
+    this.pokemonService.getAllPokemons(10, 0).subscribe(response => {
+      let pokemons = response as AllPokemons
+      console.log(pokemons)
+    });
   }
 
 }
