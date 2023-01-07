@@ -1,0 +1,24 @@
+@import "../../../styles.scss";
+
+.container {
+    background-color: $bg-black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-radius: 0 0 .5rem .5rem;
+
+    &__pokeball {}
+
+    &__search {
+        background-color: transparent;
+        border: none;
+    }
+}
+
+.icon-- {
+    &pokeball,
+    &search {
+        width: 1.5rem;  
+    }
+}

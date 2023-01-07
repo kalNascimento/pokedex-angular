@@ -8,6 +8,7 @@ import { PokeballLoadingComponent } from './components/pokeball-loading/pokeball
 import { PokemonDetailsComponent } from './components/pokemon-details/pokemon-details.component';
 import { SearchBarComponent } from './components/home-page/search-bar/search-bar.component';
 import { HttpClient, HttpClientModule} from '@angular/common/http';
+import { HeaderComponent } from './components/header/header.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { HttpClient, HttpClientModule} from '@angular/common/http';
     HomeComponent,
     PokeballLoadingComponent,
     PokemonDetailsComponent,
-    SearchBarComponent
+    SearchBarComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule,
