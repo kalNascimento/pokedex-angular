@@ -2,10 +2,28 @@
 
 // Variáveis p/ cores
 //app Colors
-$bg-red: #F23838;
-$bg-white: #F1F1F1;
-$bg-black: #242424;
-$bg-black-2: #303030;
+$bg-color-red: #F23838;
+$bg-color-white: #fbfbfb;
+$bg-color-black: #242424;
+$bg-color-black-light: #454545;
+
+$button-color-activated: #F23838;
+$button-color-hover: #d3252a;
+$button-color-focused: #c4161d;
+$button-color-desactived: #f69c9d;
+
+$border-color-activated: #454545;
+$border-color-hover: #454545;
+$border-color-focused: #c4161d3f;
+$border-color-actived: #F23838;
+
+$border-width: 1px;
+$border-width-activated: 2px;
+
+$text-color-900: #242424;
+$text-color-800: #454545;
+
+$placeholder-color: #a2a2a2;
 
 //pokemon colors
 $red: #F24C36;
@@ -20,16 +38,16 @@ $gray: #B3B1B1;
 $white: #E5E5E5;
 
 //pokemon light colors
-$red: #FCA99E;
-$blue: #D3EBFF;
-$green: #B4EDE3;
-$yellow: #FFFCD6;
-$purple: #B798BB;
-$pink: #FDBCE3;
-$brown: #CABBAB;
-$black: #B3B1B1;
-$gray: #E5E5E5;
-$white: #FEFEFE;
+$red-light: #FCA99E;
+$blue-light: #D3EBFF;
+$green-light: #B4EDE3;
+$yellow-light: #FFFCD6;
+$purple-light: #B798BB;
+$pink-light: #FDBCE3;
+$brown-light: #CABBAB;
+$black-light: #B3B1B1;
+$gray-light: #E5E5E5;
+$white-light: #FEFEFE;
 
 //Variáveis p/ sombras
 $dropShadowLevel2: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 1px 2px rgba(0, 0, 0, 0.3);
@@ -45,6 +63,12 @@ $bold-14: 700 0.875rem 'Roboto';
 $bold-16: 700 1rem 'Roboto';
 $bold-20: 700 1.25rem 'Roboto';
 $bold-24: 700 1.5rem 'Roboto';
+
+//Variaveis para border radius
+$border-radius-circle: 50%;
+$border-radius-8: .5rem;
+$border-radius-12: .75rem;
+$border-radius-16: 1rem;
 
 * {
     margin: 0;
