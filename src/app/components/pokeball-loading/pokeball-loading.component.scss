@@ -117,14 +117,14 @@
 
 @keyframes pokeball-circle {
     0% {
-        background-color: $bg-red;
+        background-color: $bg-color-red;
     }
 
     25% {
-        background-color: $bg-red;
+        background-color: $bg-color-red;
     }
 
     100% {
-        background-color: $bg-white;
+        background-color: $bg-color-white;
     }
 }
