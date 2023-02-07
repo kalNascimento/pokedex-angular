@@ -3,11 +3,11 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HomeComponent } from './components/home-page/home/home.component';
-import { PokeballLoadingComponent } from './components/pokeball-loading/pokeball-loading.component';
-import { PokemonDetailsComponent } from './components/pokemon-details/pokemon-details.component';
-import { SearchBarComponent } from './components/home-page/search-bar/search-bar.component';
-import { HttpClient, HttpClientModule} from '@angular/common/http';
+import { HomeComponent } from './modules/pokemons/pages/home/home.component';
+import { PokeballLoadingComponent } from './modules/shared/components/pokeball-loading/pokeball-loading.component';
+import { PokemonDetailsComponent } from './modules/pokemons/pages/pokemon-details/pokemon-details.component';
+import { SearchBarComponent } from './modules/pokemons/components/search-bar/search-bar.component';
+import { HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
