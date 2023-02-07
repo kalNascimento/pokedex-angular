@@ -5,7 +5,7 @@ import { PokemonRoutingModule } from './pokemons-routing.module';
 import { HomeComponent } from './pages/home/home.component';
 
 @NgModule({
-    declarations: [HomeComponent],
-    imports: [CommonModule, PokemonRoutingModule]
+	declarations: [HomeComponent],
+	imports: [CommonModule, PokemonRoutingModule]
 })
 export class PokemonModule {}
