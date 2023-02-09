@@ -1,0 +1,20 @@
+@import "../../../../../assets/styles/styles.scss";
+
+header {
+    background-color: $bg-color-black;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 0 0 1rem 1rem;
+    padding: 1rem;
+}
+
+.pokelogo {
+    width: 24px;
+    align-self: flex-start;
+}
+
+app-search-bar {
+    align-self: flex-end;
+}

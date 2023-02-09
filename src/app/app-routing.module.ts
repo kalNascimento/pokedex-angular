@@ -3,7 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
 	{
-		path: 'books',
+		path: '',
 		loadChildren: () =>
 			import('./modules/pokemons/pokemons.module').then((m) => m.PokemonModule)
 	}
