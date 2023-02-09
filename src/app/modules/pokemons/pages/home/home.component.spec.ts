@@ -2,7 +2,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { HomeComponent } from './home.component';
 import { HttpClient, HttpHandler } from '@angular/common/http';
-import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/compiler';
+import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 
 describe('HomeComponent', () => {
 	let component: HomeComponent;
