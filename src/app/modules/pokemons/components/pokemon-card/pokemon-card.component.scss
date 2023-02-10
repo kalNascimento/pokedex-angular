@@ -1,0 +1,30 @@
+@import "../../../../../assets/styles/styles";
+
+.container {
+    height: 156px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 1rem;
+    box-shadow: $dropShadowLevel2;
+}
+
+.container figure {
+    display: flex;
+    justify-content: center;
+}
+
+.poke{
+    &-img {
+        height: 90px;
+        margin: .5rem;
+    }
+    &-name {
+        width: 100%;
+        text-align: center;
+        background-color: antiquewhite;
+        border-radius: 0 0 1rem 1rem;
+        padding: .5rem;
+    }
+}

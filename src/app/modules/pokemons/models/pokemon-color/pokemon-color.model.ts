@@ -1,6 +1,8 @@
 export interface PokemonColor {
 	id: number;
 	name: string;
-	names: [];
-	pokemon_species: [];
+	color: {
+		name: string,
+		url: string
+	};
 }
