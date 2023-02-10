@@ -1,4 +1,4 @@
-export enum Colors {
+export enum enumNormalColor {
     "red" = "#F24C36",
     "blue" = "#71BCF9",
     "green" = "#5FA189",
