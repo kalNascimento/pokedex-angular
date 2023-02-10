@@ -1,0 +1,14 @@
+<div 
+    class="container"
+    [ngStyle]="{'background-color':  pokemon.getPokemonColor().light }">
+    <figure>
+        <img 
+            class="poke-img" 
+            src="{{ pokemon.getPokemonImage() }}"
+            alt=""
+        >
+    </figure>
+    <p class="poke-name" [ngStyle]="{'background-color': pokemon.getPokemonColor().normal }">
+        {{ pokemon.getPokemonName() | titlecase}}
+    </p>
+</div>

@@ -1,1 +1,35 @@
 //
+.pokemon-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 2rem 1rem;
+}
+
+@media (min-width: 576px)
+{
+    .pokemon-list {
+        padding: 2rem 2rem;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 768px)
+{
+    .pokemon-list {
+        padding: 2rem 3rem;
+        gap: 2rem;
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (min-width: 992px)
+{
+    .pokemon-list {
+        padding: 2rem 6rem;
+        gap: 2rem;
+        grid-template-columns: repeat(5, 1fr);
+    }
+}

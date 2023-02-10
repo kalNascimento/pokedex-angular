@@ -11,9 +11,15 @@ export class PokemonService {
 		this.pokeApi = 'https://pokeapi.co/api/v2';
 	}
 
-	getAllPokemons(amount: number, init: number) {
+	requestAllPokemons(amount: number, init: number) {
 		return this.http.get(
 			`${this.pokeApi}/pokemon?limit=${amount}&offset=${init}`
+		);
+	}
+
+	requestPokemonsColor(name: string) {
+		return this.http.get(
+			`https://pokeapi.co/api/v2/pokemon-species/${name}`
 		);
 	}
 }
