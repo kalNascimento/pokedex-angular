@@ -60,3 +60,30 @@ header img {
     width: 1rem;
     height: 100px;
 }
+
+@media (min-width: 576px)
+{
+    .poke-img {
+        padding: 2rem;
+        width: 30%;
+        max-width: 400px;
+    }
+}
+
+@media (min-width: 768px)
+{
+    .poke-img {
+        padding: 2rem;
+        width: 35%;
+        max-width: 400px;
+    }
+}
+
+@media (min-width: 992px)
+{
+    .poke-img {
+        padding: 2rem;
+        width: 30%;
+        max-width: 350px;
+    }
+}
