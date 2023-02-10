@@ -10,6 +10,11 @@
     box-shadow: $dropShadowLevel2;
 }
 
+.container:hover {
+    transform: scale(1.02);
+    box-shadow: $dropShadowLevel3;
+}
+
 .container figure {
     display: flex;
     justify-content: center;

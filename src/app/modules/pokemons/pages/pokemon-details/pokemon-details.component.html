@@ -1,1 +1,29 @@
-<p>pokemon-details works!</p>
+<section>
+    <div class="poke-img-container" 
+        [ngStyle]="{'background-color':  pokemon.getPokemonLightColor() }">
+        <header>
+            <a [routerLink]="['']">
+                <img 
+                class="icon-header"
+                src="../../../../../assets/images/close_material_icons.svg" 
+                alt=""
+                >
+            </a>
+        </header>
+        <figure class="poke-container">
+            <img class="poke-img" src="{{ this.pokemon.getPokemonImage() }}" alt="">
+        </figure>
+    </div>
+    <div class="poke-container-data">
+        <p class="poke-text">{{ this.pokemon.getPokemonName() | uppercase }}</p>
+        <p class="poke-text"> Stats </p>
+        <div class="poke-container-stats">
+            <div class="graf-bar" [ngStyle]="{'background-color':  pokemon.getPokemonLightColor() }"></div>
+            <div class="graf-bar" [ngStyle]="{'background-color':  pokemon.getPokemonLightColor() }"></div>
+            <div class="graf-bar" [ngStyle]="{'background-color':  pokemon.getPokemonLightColor() }"></div>
+            <div class="graf-bar" [ngStyle]="{'background-color':  pokemon.getPokemonLightColor() }"></div>
+            <div class="graf-bar" [ngStyle]="{'background-color':  pokemon.getPokemonLightColor() }"></div>
+            <div class="graf-bar" [ngStyle]="{'background-color':  pokemon.getPokemonLightColor() }"></div>
+        </div>
+    </div>
+</section>

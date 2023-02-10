@@ -1,14 +1,12 @@
-import { ColorsEnum } from "../enuns/colorsEnum";
-import { Colors } from "../enuns/colors";
-import { ColorsLight } from "../enuns/colors-light";
+import { ColorsEnum } from "../enums/colorsEnum";
+import { enumNormalColor } from "../enums/enumNormalColors";
+import { enumLightColor } from "../enums/enumLightColors";
 
 export class Pokemon {
     private id = 0;
     private name = '';
-    private color = {
-        normal: '',
-        light: ''
-    };
+    private normalColor = '';
+    private lightColor = '';
 
     public constructor(id: number, name: string) {
         this.id = id;
@@ -24,12 +22,16 @@ export class Pokemon {
     }
     
     public setPokemonColor(color: ColorsEnum) {
-        this.color.normal = Colors[color];
-        this.color.light = ColorsLight[color];
+        this.normalColor = enumNormalColor[color];
+        this.lightColor = enumLightColor[color];
     }
 
-    public getPokemonColor() {
-        return this.color;
+    public getPokemonNormalColor() {
+        return this.normalColor;
+    }
+
+    public getPokemonLightColor() {
+        return this.lightColor;
     }
 
     public getPokemonImage(): string {

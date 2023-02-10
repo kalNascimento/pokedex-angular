@@ -3,7 +3,7 @@ import { AllPokemons } from '../../models/all-pokemons/all-pokemons.model';
 import { PokemonService } from '../../services/pokemon-service/pokemon.service';
 import { Pokemon } from '../../models/pokemon/pokemon.model';
 import { PokemonColor } from '../../models/pokemon-color/pokemon-color.model';
-import { ColorsEnum } from '../../models/enuns/colorsEnum';
+import { ColorsEnum } from '../../models/enums/colorsEnum';
 
 @Component({
 	selector: 'app-home',

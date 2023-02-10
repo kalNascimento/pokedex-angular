@@ -1,4 +1,4 @@
-export interface Pokemon {
+export interface PokemonRequest {
 	id: number;
 	name: string;
 	base_experience: number;

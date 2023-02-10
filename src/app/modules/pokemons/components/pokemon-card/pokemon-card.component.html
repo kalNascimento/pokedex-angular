@@ -1,6 +1,6 @@
-<div 
+<a [routerLink]="['/details', pokemon.getPokemonName()]"
     class="container"
-    [ngStyle]="{'background-color':  pokemon.getPokemonColor().light }">
+    [ngStyle]="{'background-color':  pokemon.getPokemonLightColor() }">
     <figure>
         <img 
             class="poke-img" 
@@ -8,7 +8,7 @@
             alt=""
         >
     </figure>
-    <p class="poke-name" [ngStyle]="{'background-color': pokemon.getPokemonColor().normal }">
+    <p class="poke-name" [ngStyle]="{'background-color': pokemon.getPokemonNormalColor() }">
         {{ pokemon.getPokemonName() | titlecase}}
     </p>
-</div>
+</a>

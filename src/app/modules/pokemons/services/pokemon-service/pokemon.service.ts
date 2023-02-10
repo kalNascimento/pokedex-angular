@@ -17,9 +17,15 @@ export class PokemonService {
 		);
 	}
 
+	requestPokemon(name: string) {
+		return this.http.get(
+			`${this.pokeApi}/pokemon/${name}`
+		)
+	}
+
 	requestPokemonsColor(name: string) {
 		return this.http.get(
-			`https://pokeapi.co/api/v2/pokemon-species/${name}`
+			`${this.pokeApi}/pokemon-species/${name}`
 		);
 	}
 }

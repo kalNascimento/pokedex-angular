@@ -1,0 +1,24 @@
+@import '../../../../../assets/styles/styles.scss';
+
+footer {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-radius: 1rem 1rem 0 0;
+}
+
+p {
+    padding: 1rem;
+}
+
+// position: fixed;
+//     bottom: 0;
+
+@media (min-width: 992px)
+{
+    footer {
+        position: fixed;
+        bottom: 0;
+    }
+}

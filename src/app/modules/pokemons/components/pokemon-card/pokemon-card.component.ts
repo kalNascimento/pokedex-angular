@@ -1,5 +1,4 @@
-import { Component, Input, OnInit } from '@angular/core';
-import { Colors } from '../../models/enuns/colors';
+import { Component, Input} from '@angular/core';
 import { Pokemon } from '../../models/pokemon/pokemon.model';
 
 @Component({

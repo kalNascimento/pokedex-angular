@@ -1,1 +1,62 @@
-//
+@import '../../../../../assets/styles/styles.scss';
+
+section {
+    height: 100vh;
+    background-color: $bg-color-black;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+header img {
+    width: 24px;
+}
+
+.poke {
+    &-img-container {
+        height: 50vh;
+        border-radius: 0 0 1rem 1rem;
+    }
+    &-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height:fit-content;
+        width: 100%;
+
+        &-data {
+            width: 100%;
+            display: grid;
+            justify-content: center;
+            grid-template-rows: repeat(3, fit-content, fit-content, auto);
+            row-gap: 1rem;
+            padding: 1rem;
+        }
+
+        &-stats {
+            display: flex;
+            gap: 1.5rem;
+            padding: 1rem;
+            border: 1px solid $bg-color-white;
+            border-radius: 1rem;
+        }
+    }
+
+    &-img {
+        width: 50%;
+    }
+
+    &-text {
+        text-align: center;
+        color: $bg-color-white;
+    }
+}
+
+.graf-bar {
+    width: 1rem;
+    height: 100px;
+}
