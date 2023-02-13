@@ -18,13 +18,31 @@
         }
     }
 
-    &-text {
+    &-text,
+    &-stats {
+        font: $normal-12;
         text-align: center;
         color: $bg-color-white;
     }
+
+    &-stats {
+        font: $normal-16;
+    }
 }
 
-.graf-bar {
-    width: 1rem;
-    height: 100px;
+.graph {
+
+    &-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        gap: .5rem;
+        width: 36px;
+    }
+
+    &-bar {
+        width: 1rem;
+        height: 100px;
+    } 
 }

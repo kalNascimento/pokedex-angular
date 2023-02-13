@@ -1,13 +1,18 @@
 <div class="poke-container">
-    <p class="poke-text"> Stats </p>
+    <p class="poke-stats"> Stats </p>
     <div 
         class="poke-container-stats"
         [ngStyle]="{'border-color':  pokemon.getPokemonNormalColor() }">
-        <div class="graf-bar" [ngStyle]="{'background-color':  pokemon.getPokemonNormalColor() }"></div>
-        <div class="graf-bar" [ngStyle]="{'background-color':  pokemon.getPokemonNormalColor() }"></div>
-        <div class="graf-bar" [ngStyle]="{'background-color':  pokemon.getPokemonNormalColor() }"></div>
-        <div class="graf-bar" [ngStyle]="{'background-color':  pokemon.getPokemonNormalColor() }"></div>
-        <div class="graf-bar" [ngStyle]="{'background-color':  pokemon.getPokemonNormalColor() }"></div>
-        <div class="graf-bar" [ngStyle]="{'background-color':  pokemon.getPokemonNormalColor() }"></div>
+        
+        <div class="graph-container">
+            <p class="graph-numbers poke-text">100</p>
+            <div class="graph-bar" [ngStyle]="{'background-color':  pokemon.getPokemonNormalColor() }"></div>
+            <p class="graph-status poke-text">HP</p>
+        </div>
+        <div class="graph-container">
+            <p class="graph-numbers poke-text">100</p>
+            <div class="graph-bar" [ngStyle]="{'background-color':  pokemon.getPokemonNormalColor() }"></div>
+            <p class="graph-status poke-text">Special Attack</p>
+        </div>
     </div>
 </div>

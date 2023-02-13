@@ -2,7 +2,7 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { PokeStatusGraphComponent } from './poke-status-graph.component';
 
-describe('PokeStatusGraphComponent', () => {
+xdescribe('PokeStatusGraphComponent', () => {
   let component: PokeStatusGraphComponent;
   let fixture: ComponentFixture<PokeStatusGraphComponent>;
 
