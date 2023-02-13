@@ -31,20 +31,10 @@ header img {
 
         &-data {
             width: 100%;
-            display: grid;
-            justify-content: center;
-            grid-template-rows: repeat(3, fit-content, fit-content, auto);
-            row-gap: 1rem;
-            padding: 1rem;
-        }
-
-        &-stats {
             display: flex;
-            gap: 1.5rem;
-            width: fit-content;
+            flex-direction: column;
+            gap: 1rem;
             padding: 1rem;
-            border: 1px solid $bg-color-white;
-            border-radius: 1rem;
         }
     }
 
@@ -58,9 +48,4 @@ header img {
         text-align: center;
         color: $bg-color-white;
     }
-}
-
-.graf-bar {
-    width: 1rem;
-    height: 100px;
 }

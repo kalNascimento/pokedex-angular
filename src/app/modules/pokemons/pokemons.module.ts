@@ -10,6 +10,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { SearchBarComponent } from './components/search-bar/search-bar.component';
 import { PokemonCardComponent } from './components/pokemon-card/pokemon-card.component';
 import { PokemonDetailsComponent } from './pages/pokemon-details/pokemon-details.component';
+import { PokeStatusGraphComponent } from './components/poke-status-graph/poke-status-graph.component';
 
 @NgModule({
 	declarations: [
@@ -19,7 +20,8 @@ import { PokemonDetailsComponent } from './pages/pokemon-details/pokemon-details
         HeaderComponent,
         PokemonCardComponent,
         FooterComponent,
-        PokemonDetailsComponent
+        PokemonDetailsComponent,
+        PokeStatusGraphComponent
         ],
 	imports: [CommonModule, PokemonRoutingModule],
         schemas: [ CUSTOM_ELEMENTS_SCHEMA, NO_ERRORS_SCHEMA ]
