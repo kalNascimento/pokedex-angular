@@ -59,20 +59,20 @@
 /*Animação*/
 .pokeball {
 	&-container {
-		animation: pokeball-container 4.75s 1;
+		animation: pokeball-container 2.75s 1;
 	}
 
 	&-top {
-		animation: pokeball-top 5s 1;
+		animation: pokeball-top 3s 1;
 	}
 
 	&-bottom {
-		animation: pokeball-bottom 5s 1;
+		animation: pokeball-bottom 3s 1;
 	}
 }
 
 .white-circle-pokeball {
-	animation: pokeball-circle 0.75s 5;
+	animation: pokeball-circle 0.75s 3;
 }
 
 @keyframes pokeball-container {
