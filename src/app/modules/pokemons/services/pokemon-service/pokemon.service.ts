@@ -28,4 +28,10 @@ export class PokemonService {
 			`${this.pokeApi}/pokemon-species/${name}`
 		);
 	}
+
+	requestPokemonsStats(name: string) {
+		return this.http.get(
+			`${this.pokeApi}/pokemon/${name}`
+		);
+	}
 }

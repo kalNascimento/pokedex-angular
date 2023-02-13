@@ -3,16 +3,18 @@
     <div 
         class="poke-container-stats"
         [ngStyle]="{'border-color':  pokemon.getPokemonNormalColor() }">
-        
-        <div class="graph-container">
-            <p class="graph-numbers poke-text">100</p>
-            <div class="graph-bar" [ngStyle]="{'background-color':  pokemon.getPokemonNormalColor() }"></div>
-            <p class="graph-status poke-text">HP</p>
-        </div>
-        <div class="graph-container">
-            <p class="graph-numbers poke-text">100</p>
-            <div class="graph-bar" [ngStyle]="{'background-color':  pokemon.getPokemonNormalColor() }"></div>
-            <p class="graph-status poke-text">Special Attack</p>
+        <div class="graph-container" *ngFor="let stats of this.pokemon.getPokemonStats(); let i = index">
+            <p class="graph-numbers poke-text">{{ stats.base_stat }}</p>
+            <div class="bar-container">
+                <div 
+                    class="graph-bar" 
+                    [ngStyle]="{
+                        'background-color':  pokemon.getPokemonNormalColor(),
+                        'height': this.createBar(i) 
+                    }">
+                </div>
+            </div>
+            <p class="graph-status poke-text">{{ stats.stat.name }}</p>
         </div>
     </div>
 </div>

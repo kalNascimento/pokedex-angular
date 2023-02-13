@@ -5,6 +5,7 @@ import { PokemonService } from '../../services/pokemon-service/pokemon.service';
 import { Pokemon } from '../../models/pokemon/pokemon.model';
 import { PokemonColor } from '../../models/pokemon-color/pokemon-color.model';
 import { ColorsEnum } from '../../models/enums/colorsEnum';
+import { PokeStatus } from '../../models/poke-status/pokeStatus';
 
 @Component({
 	selector: 'app-pokemon-details',
@@ -17,8 +18,7 @@ export class PokemonDetailsComponent implements OnInit {
 	constructor(private route: ActivatedRoute, private pokemonService: PokemonService) {
 		//
 	}
-
-	// eslint-disable-next-line @angular-eslint/no-empty-lifecycle-method
+	
 	ngOnInit(): void {
 		this.route.params.subscribe(params => {
 			this.pokemonService.requestPokemon(params['name']).subscribe((response) => {
@@ -30,7 +30,13 @@ export class PokemonDetailsComponent implements OnInit {
 
 					this.pokemon.setPokemonColor(resp.color.name as ColorsEnum)
 				}))
-				console.log(this.pokemon)
+
+				this.pokemonService.requestPokemonsStats(poke.name).subscribe((response => {
+					const resp = response as PokeStatus;
+
+					this.pokemon.setPokemonStats(resp.stats)
+					console.log(this.pokemon.getPokemonStats())
+				}))
 			});
 		});
 	}
