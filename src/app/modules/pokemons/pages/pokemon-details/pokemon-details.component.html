@@ -17,13 +17,15 @@
     <div class="poke-container-data">
         <p class="poke-text">{{ this.pokemon.getPokemonName() | uppercase }}</p>
         <p class="poke-text"> Stats </p>
-        <div class="poke-container-stats">
-            <div class="graf-bar" [ngStyle]="{'background-color':  pokemon.getPokemonLightColor() }"></div>
-            <div class="graf-bar" [ngStyle]="{'background-color':  pokemon.getPokemonLightColor() }"></div>
-            <div class="graf-bar" [ngStyle]="{'background-color':  pokemon.getPokemonLightColor() }"></div>
-            <div class="graf-bar" [ngStyle]="{'background-color':  pokemon.getPokemonLightColor() }"></div>
-            <div class="graf-bar" [ngStyle]="{'background-color':  pokemon.getPokemonLightColor() }"></div>
-            <div class="graf-bar" [ngStyle]="{'background-color':  pokemon.getPokemonLightColor() }"></div>
+        <div 
+            class="poke-container-stats"
+            [ngStyle]="{'border-color':  pokemon.getPokemonNormalColor() }">
+            <div class="graf-bar" [ngStyle]="{'background-color':  pokemon.getPokemonNormalColor() }"></div>
+            <div class="graf-bar" [ngStyle]="{'background-color':  pokemon.getPokemonNormalColor() }"></div>
+            <div class="graf-bar" [ngStyle]="{'background-color':  pokemon.getPokemonNormalColor() }"></div>
+            <div class="graf-bar" [ngStyle]="{'background-color':  pokemon.getPokemonNormalColor() }"></div>
+            <div class="graf-bar" [ngStyle]="{'background-color':  pokemon.getPokemonNormalColor() }"></div>
+            <div class="graf-bar" [ngStyle]="{'background-color':  pokemon.getPokemonNormalColor() }"></div>
         </div>
     </div>
 </section>

@@ -41,6 +41,7 @@ header img {
         &-stats {
             display: flex;
             gap: 1.5rem;
+            width: fit-content;
             padding: 1rem;
             border: 1px solid $bg-color-white;
             border-radius: 1rem;
