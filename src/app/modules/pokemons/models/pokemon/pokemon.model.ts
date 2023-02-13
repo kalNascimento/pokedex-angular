@@ -1,7 +1,6 @@
 import { ColorsEnum } from "../enums/colorsEnum";
 import { enumNormalColor } from "../enums/enumNormalColors";
 import { enumLightColor } from "../enums/enumLightColors";
-import { PokeStatus } from "../poke-status/pokeStatus";
 
 export class Pokemon {
     private id = 0;
