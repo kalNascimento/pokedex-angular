@@ -33,6 +33,16 @@ export class HomeComponent implements OnInit {
 
 					objPokemon.setPokemonColor(resp.color.name as ColorsEnum)
 					this.pokemons.push(objPokemon);
+
+					this.pokemons.sort((a, b) => {
+						if (a.getPokemonName() > b.getPokemonName()) {
+							return 1;
+						}
+						if (a.getPokemonName() < b.getPokemonName()) {
+							return -1;
+						}
+						return 0;
+					});
 				}))
 			});
 		});
