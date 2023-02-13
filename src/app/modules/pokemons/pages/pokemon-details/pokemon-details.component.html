@@ -18,4 +18,6 @@
         <p class="poke-text">{{ this.pokemon.getPokemonName() | uppercase }}</p>
         <app-poke-status-graph [pokemon]="this.pokemon"></app-poke-status-graph>
     </div>
+    <app-footer [bgColor]="this.pokemon.getPokemonNormalColor()"></app-footer>
 </section>
+
