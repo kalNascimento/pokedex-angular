@@ -6,6 +6,7 @@
 		visibility: hidden;
 		position: absolute;
 		top: 0;
+		min-width: 360px;
 		width: 100%;
 		height: 100vh;
 	}
@@ -20,7 +21,7 @@
 		z-index: 2;
 		width: 100%;
 		height: 0;
-		border-radius: 0 0 10% 10%;
+		border-radius: 0 0 2rem 2rem;
 		border-bottom: 1rem solid $bg-color-black;
 	}
 
@@ -31,7 +32,7 @@
 		z-index: 1;
 		width: 100%;
 		height: 0;
-		border-radius: 10% 10% 0 0;
+		border-radius: 2rem 2rem 0 0;
 		border-top: 1rem solid $bg-color-black;
 	}
 }
